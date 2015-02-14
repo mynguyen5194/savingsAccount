@@ -27,9 +27,10 @@ public class SavingsAccount {
 	}
 	
 	// Get the monthly interest
-	public double getMothlyInterest (double balance) {
-		
-		return this.calculateMonthlyInterest(balance);
+	public void getMothlyInterest (double balance, String saver) {
+		System.out.printf("Balance of " + saver + " at " + (this.getAnnualInterestRate() * 100)
+				+ "%% interest rate: $%1.2f \n", this.calculateMonthlyInterest(balance));
+//		return this.calculateMonthlyInterest(balance);
 	}
 		
 	// Calculate the monthly interest 

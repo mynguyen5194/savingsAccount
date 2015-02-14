@@ -11,18 +11,12 @@ public class SavingsAccountTest {
 		
 		
 		SavingsAccount.modifyInterestRate(0.04);
-		System.out.printf("Balance of Saver 1 at 4%% interest rate: $%1.2f\n",
-				saver1.getMothlyInterest(saver1.getSavingsBalance()));
-		
-		System.out.printf("Balance of Saver 2 at 4%% interest rate: $%1.2f\n\n",
-				saver2.getMothlyInterest(saver2.getSavingsBalance()));
+		saver1.getMothlyInterest(saver1.getSavingsBalance(), "Saver1");
+		saver2.getMothlyInterest(saver2.getSavingsBalance(), "Saver2");
 		
 		SavingsAccount.modifyInterestRate(0.05);
-		System.out.printf("Balance of Saver 1 at 5%% interest rate: $%1.2f\n",
-				saver1.getMothlyInterest(saver1.getSavingsBalance()));
-		
-		System.out.printf("Balance of Saver 2 at 5%% interest rate: $%1.2f\n", 
-				saver2.getMothlyInterest(saver2.getSavingsBalance()));
+		saver1.getMothlyInterest(saver1.getSavingsBalance(), "Saver1");
+		saver2.getMothlyInterest(saver2.getSavingsBalance(), "Saver2");
 		
 		
 		/*
