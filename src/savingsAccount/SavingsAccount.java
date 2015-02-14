@@ -30,7 +30,6 @@ public class SavingsAccount {
 	public void getMothlyInterest (double balance, String saver) {
 		System.out.printf("Balance of " + saver + " at " + (this.getAnnualInterestRate() * 100)
 				+ "%% interest rate: $%1.2f \n", this.calculateMonthlyInterest(balance));
-//		return this.calculateMonthlyInterest(balance);
 	}
 		
 	// Calculate the monthly interest 
@@ -45,25 +44,27 @@ public class SavingsAccount {
 		annualInterestRate = newValue;
 	}
 	
-	// Deposit some money into the Saving Accounts
-	public double depositMoney(double depositAmount) {
+	// Deposit money into the Saving Accounts
+	public double depositMoney(double depositAmount, String saver) {
 		this.savingsBalance += depositAmount;
 		if (this.getSavingsBalance() < 10000.00) {
-			System.out.printf("An amount of $%1.2f was sucessfully deposited in your Saving Account\n", + depositAmount );
-			System.out.printf("Saving Account balance at 4%% interest: $%1.2f \n",
+			System.out.printf("An amount of $%1.2f was successfully deposited in " 
+							+ saver + "'s Saving Account\n", depositAmount );
+			System.out.printf("Saving Account balance at 4%% interest rate: $%1.2f \n\n",
 					this.calculateMonthlyInterest(this.getSavingsBalance()));
 		}
 		return this.savingsBalance;
 	}
 	
-	// Withdraw some money from the Savings Account
-	public double withdrawMoney(double withdrawalAmount) {
+	// Withdraw money from the Savings Account
+	public double withdrawMoney(double withdrawalAmount, String saver) {
 		this.savingsBalance -= withdrawalAmount;
 		if (this.getSavingsBalance() < 10000.00) {
-			System.out.printf("\nAn amount of $%1.2f was withdrew from your Saving Account\n", withdrawalAmount);
-			System.out.printf("Saving Account balance at 4%% interest: $%1.2f \n",
+			System.out.printf("An amount of $%1.2f was withdrew from "
+							+ saver + "'s Saving Account\n", withdrawalAmount);
+			System.out.printf("Saving Account balance at 4%% interest rate: $%1.2f \n\n",
 					this.calculateMonthlyInterest(this.getSavingsBalance()));
 		}
-		return (this.getSavingsBalance());
+		return this.getSavingsBalance();
 	}
 }
