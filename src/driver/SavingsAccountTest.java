@@ -1,3 +1,17 @@
+ /*
+ * Name: My Nguyen
+ * Course: CIS 35A - 61Y
+ * Assignment: #3
+ * Project: #1
+ * Due date: 02/15/2015
+ * Data submitted: 02/14/2015
+ * 
+ * This program includes 2 parts:
+ * 	Part 1: the program displays the saving balance of different savers at different annual interest rates
+ * 	Part 2: the program allows the users to deposit or withdraw money from their account. If the saving
+ * 			balance is above or equal to 10K, an annual interest rate of 10% will be applied. Otherwise,
+ * 			an annual interest rate of 4% will be used. 
+ */
 package driver;
 
 import savingsAccount.*;
@@ -5,7 +19,7 @@ import savingsAccount.*;
 public class SavingsAccountTest {
 
 	public static void main(String[] args) {
-		/*
+		
 		// Part 1:
 		SavingsAccount saver1 = new SavingsAccount(2000.00);
 		SavingsAccount saver2 = new SavingsAccount(3000.00);
@@ -18,8 +32,8 @@ public class SavingsAccountTest {
 		SavingsAccount.modifyInterestRate(0.05);
 		saver1.getMothlyInterest(saver1.getSavingsBalance(), "Saver1");
 		saver2.getMothlyInterest(saver2.getSavingsBalance(), "Saver2");
-		*/
 		
+		/*
 		// Part 2:
 		SavingsAccount saver1 = new SpecialSavings(2000);
 		
@@ -31,10 +45,9 @@ public class SavingsAccountTest {
 		saver2.depositMoney(8000, "Saver2");
 		saver2.withdrawMoney(100, "Saver2");
 		saver2.withdrawMoney(2000, "Saver2");
-		
+		*/
 	}
 }
-
 
 
 /*

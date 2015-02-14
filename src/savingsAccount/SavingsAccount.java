@@ -1,3 +1,7 @@
+/*
+ * Regular SavingsAccount class
+ */
+
 package savingsAccount;
 
 public class SavingsAccount {

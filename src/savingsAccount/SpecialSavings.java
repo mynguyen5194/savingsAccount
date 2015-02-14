@@ -1,3 +1,8 @@
+/*
+ * SpecialSavings class that extends SavingsAccount to pay interest of 10% 
+ * on accounts that have balances that exceed 10K
+ */
+
 package savingsAccount;
 
 public class SpecialSavings extends SavingsAccount {
